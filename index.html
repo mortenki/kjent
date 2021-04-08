@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Kjent i marka</title>
+
+	<meta charset="utf-8" />
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+	
+</head>
+<body style="margin: 0; padding: 0;">
+
+<div id="mapid" style="height: 100vh; margin: 0; width: 100vw;"></div>
+<script>
+
+	var mymap = L.map('mapid').setView([59.9139, 10.7522], 9);
+
+	L.tileLayer('http://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=topo4&zoom={z}&x={x}&y={y}', {
+		maxZoom: 18,
+		attribution: '&copy; <a href="https://kartverket.no">Kartverket</a>',
+		id: 'kartverket/topo4',
+		tileSize: 512,
+		zoomOffset: -1
+	}).addTo(mymap);
+
+	L.marker([59.67313083480389, 10.558494594308717]).addTo(mymap).bindPopup("<b>1. Leina Kanonpost</b>");
+	L.marker([59.746919120537086, 10.477827088600833]).addTo(mymap).bindPopup("<b>2. Aukeåsen 213</b>");
+	L.marker([59.84665210661852, 10.324341204433813]).addTo(mymap).bindPopup("<b>3. Bøsetra, ved utsikten</b>");
+	L.marker([59.85716732172482, 10.526868283691547]).addTo(mymap).bindPopup("<b>4. Haagensenovnen</b>");
+	L.marker([59.881562228821096, 10.40475564667659]).addTo(mymap).bindPopup("<b>5. OL-skog</b>");
+	L.marker([59.911323735029335, 10.387861540022492]).addTo(mymap).bindPopup("<b>6. Ringivollen</b>");
+	L.marker([59.92254177401905, 10.62515259656873]).addTo(mymap).bindPopup("<b>7. Lysakerelven</b>");
+	L.marker([59.96802877950515, 10.520610845870065]).addTo(mymap).bindPopup("<b>8. Øyervannsdammen</b>");
+	L.marker([59.97338755795096, 10.606518982098253]).addTo(mymap).bindPopup("<b>9. Portstolpene ved Kråka</b>");
+	L.marker([59.981991867358836, 10.483705390572696]).addTo(mymap).bindPopup("<b>10. Lommedalsbanen</b>");
+	L.marker([59.99078400131117, 10.306936419896486]).addTo(mymap).bindPopup("<b>11. Menuetten</b>");
+	L.marker([60.015180576329264, 10.390813485232734]).addTo(mymap).bindPopup("<b>12. Dammersplassen</b>");
+	L.marker([60.04533765115204, 10.549069692655475]).addTo(mymap).bindPopup("<b>13. Lysegrana</b>");
+	L.marker([60.0589025495229, 10.44399127476962]).addTo(mymap).bindPopup("<b>14. Sersjantmyra</b>");
+	L.marker([60.08588750272016, 10.524202537487898]).addTo(mymap).bindPopup("<b>15. Såta</b>");
+	L.marker([60.09600951715146, 10.367999320125808]).addTo(mymap).bindPopup("<b>16. Mørkganga</b>");
+	L.marker([60.11880188225586, 10.405709760625404]).addTo(mymap).bindPopup("<b>17. Stubdalskampen</b>");
+	L.marker([60.12805631953084, 10.515999757432029]).addTo(mymap).bindPopup("<b>18. Bleiksjøflaka 576</b>");
+	L.marker([60.24981922036629, 10.602805063515115]).addTo(mymap).bindPopup("<b>19. Svesvika</b>");
+	L.marker([60.19390453054895, 10.630110165121351]).addTo(mymap).bindPopup("<b>20. \"Gullfax\" ved opplysningsskiltet</b>");
+	L.marker([60.184236134919466, 10.618793390640379]).addTo(mymap).bindPopup("<b>21. Bekkeløpet nord for Grimstjernsputten</b>");
+	L.marker([60.18521675552062, 10.506660981352367]).addTo(mymap).bindPopup("<b>22. Pershusfjellet 649</b>");
+	L.marker([60.159954919539686, 10.584372132700716]).addTo(mymap).bindPopup("<b>23. Nedre Skjortjern</b>");
+	L.marker([60.14930616471971, 10.533027343772785]).addTo(mymap).bindPopup("<b>24. Spålsdammen</b>");
+	L.marker([60.15881287989032, 10.705995947231731]).addTo(mymap).bindPopup("<b>25. Fiskeløysåsen 370</b>");
+	L.marker([60.09301644936627, 10.657313044984969]).addTo(mymap).bindPopup("<b>26. Hakklokroktjern</b>");
+	L.marker([60.083489821602285, 10.68203918550447]).addTo(mymap).bindPopup("<b>27. Ved Hakkloelvens Østside</b>");
+	L.marker([60.11057553142306, 10.767589345022325]).addTo(mymap).bindPopup("<b>28. \"No Time to Die\"</b>");
+	L.marker([60.08597352607432, 10.740669423692534]).addTo(mymap).bindPopup("<b>29. Fuglemyrhøgda 456</b>");
+	L.marker([60.07044616289265, 10.838152065807371]).addTo(mymap).bindPopup("<b>30. Skåltjern</b>");
+	L.marker([60.04575141437889, 10.6485148626658]).addTo(mymap).bindPopup("<b>31. Glåmene</b>");
+	L.marker([60.038336459866, 10.750226283910997]).addTo(mymap).bindPopup("<b>32. Helgheim</b>");
+	L.marker([59.99216891538866, 10.714207676245525]).addTo(mymap).bindPopup("<b>33. Høyde 324, vest Lille Åklungen</b>");
+	L.marker([59.9743882745136, 10.684027667008879]).addTo(mymap).bindPopup("<b>34. Bob-banen ved \"Veggen\"</b>");
+	L.marker([60.021337546999604, 10.857890411010573]).addTo(mymap).bindPopup("<b>35. Brennberget 441</b>");
+	L.marker([59.98692513903685, 10.816864658347155]).addTo(mymap).bindPopup("<b>36. Kampen</b>");
+	L.marker([59.96780254920809, 10.941800415447169]).addTo(mymap).bindPopup("<b>37. Sherpatrappen</b>");
+	L.marker([59.956775732630526, 10.809554218366978]).addTo(mymap).bindPopup("<b>38. Haralds bolig</b>");
+	L.marker([60.22261072919411, 10.861849870975112]).addTo(mymap).bindPopup("<b>39. Rudskampen 585</b>");
+	L.marker([60.195536772265775, 10.781753928322967]).addTo(mymap).bindPopup("<b>40. Kroktjernet</b>");
+	L.marker([60.14630279060312, 10.98265177665684]).addTo(mymap).bindPopup("<b>41. Raudfjell 410</b>");
+	L.marker([60.127290613468595, 10.88661568679035]).addTo(mymap).bindPopup("<b>42. Port Arthur</b>");
+	L.marker([60.029025815851845, 11.019487883471616]).addTo(mymap).bindPopup("<b>43. Der Skarudhytta sto</b>");
+	L.marker([59.826687610806886, 10.768454865161972]).addTo(mymap).bindPopup("<b>44. Gjersjøelva</b>");
+	L.marker([59.90679099001623, 10.986824807352194]).addTo(mymap).bindPopup("<b>45. Hoppet pa Kirkerudkollen</b>");
+	L.marker([59.83413352483901, 10.944806797655637]).addTo(mymap).bindPopup("<b>46. \"Ørneredet\"</b>");
+	L.marker([59.72430685135521, 10.94859931725474]).addTo(mymap).bindPopup("<b>47. Dammyrdammen</b>");
+	L.marker([59.733098016301454, 10.81524136093132]).addTo(mymap).bindPopup("<b>48. Hebekkmåsan</b>");
+	L.marker([59.72646689143694, 10.980136617361214]).addTo(mymap).bindPopup("<b>49. Prekestolen</b>");
+	L.marker([59.70740168410886, 10.800837494636491]).addTo(mymap).bindPopup("<b>50. Salstein</b>");
+	
+	var current_accuracy;
+
+    function onLocationFound(e) {
+      if (current_accuracy ) mymap.removeLayer(current_accuracy);
+      var radius = e.accuracy / 2;
+      current_accuracy = L.circle(e.latlng, radius).addTo(mymap);
+    }
+
+    function onLocationError(e) {
+      //alert(e.message);
+    }
+
+    mymap.on('locationfound', onLocationFound);
+    mymap.on('locationerror', onLocationError);
+
+    function locate() {
+      mymap.locate({setView: false, maxZoom: 16});
+    }
+
+    setInterval(locate, 3000);
+
+</script>
+
+</body>
+</html>
